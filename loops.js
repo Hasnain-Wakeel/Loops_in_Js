@@ -26,19 +26,51 @@
 //   console.log(students[i]);
 // }
 
-// // console.log(students[i]);             // This returns undefined bcz the value of i is 4 and 
+// // console.log(students[i]);             // This returns undefined bcz the value of i is 4 and
 //                                                    // the array has only 4 elements.
 //   console.log(`Value of i outside the loop is ${i}`)
 
-// 
+// let numbers = [1, 2, 3, 4, 5]
+
+// for (i = 0 ; i < numbers.length ; i++){
+//      numbers = numbers + 1             // numbers aik array hai , aur array mein aisay addition nahi kiya jata ....
+//      console.log(numbers)
+// }
+
+// This code is not Factually correct , bcz if we want to access elements of an array,
+// we should write the indexes or access the indexes through square brackets ....
+
+// For Example :
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// for (i = 0; i < numbers.length; i++) {       // Yahan hum "<=" ki jagah sirf "<" use karein gay bcz hamaray pass array mein
+//                                                                     // total indexes 4 hain ...
+//   numbers[i] = numbers[i] + 1;
+//   console.log(numbers[i]);
+// }
 
 
+//              Jab i = 5 : 
 
+// Code try karega numbers[5] access karne ka.
+// Lekin numbers[5] exist hi nahi karta (undefined hai).
 
+// Phir ye line chalegi:
 
+// numbers[5] = numbers[5] + 1
 
+// Yaani: undefined + 1
+// Result banega: NaN (Not a Number).
+// Aur numbers[5] ban jaayega NaN (array mein ek naya element add ho jaayega index 5 par).
 
-
+// Final output hoga:
+// 2
+// 3
+// 4
+// 5
+// 6
+// NaN
 
 
 

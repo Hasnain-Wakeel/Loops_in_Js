@@ -51,7 +51,7 @@
 // let numbers = [1, 2, 3, 4, 5];
 
 // for (i = 0; i < numbers.length; i++) {       // Yahan hum "<=" ki jagah sirf "<" use karein gay bcz hamaray pass array mein
-//                                                                     // total indexes 4 hain ...
+// total indexes 4 hain ...
 //   numbers[i] = numbers[i] + 1;
 //   console.log(numbers[i]);
 // }
@@ -81,12 +81,50 @@
 
 // -----------------------------------------------------------------------------------------------------------
 
-let numbers = [1, 2, 3, 4, 5];
-let sum = 0;
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+// let sum = 0;
 
-for (i = 0; i < numbers.length; i++) {
-  sum = sum + numbers[i];
-  // console.log(sum)
-}
-console.log(`The total sum of the elements of the array will be:`, sum);
+// for (i = 0; i < numbers.length; i++) {
+//   sum = sum + numbers[i];
+//   console.log(sum)                       // Ye console alag alag sum kar kay dikhaaye ga .....
+// }
+// console.log(`The total sum of the elements of the array will be:`, sum);           // Ye console final (total) sum dikhaaye ga ....
+
+// --------------------------------------------------------------------------------
+
+// Running Loop On The Basis Of Inputted String's Length :
+
+// let students = prompt("Enter Your Name :")
+
+// for(i = 0 ; i < students.length ; i++){
+//   console.log(students)
+// }
+
+// This program takes an input and prints it as many times as the length of that input.
+
+// ----------------------------------------------------------------------------------------------------------------
+
+// Only Printing A Single "OR" Specific Part Of The Result Of A Loop (Code) :
+                                //  "OR"
+// Using Conditional Statements Inside For Loop :
+
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// for (i = 0; i < numbers.length; i++) {
+//   if(numbers[i] >= 3){
+//     console.log(`Greater Than OR Equal To 3, includes: ${numbers[i]} `)
+//   }
+//   else{
+//     console.log(`Numbers that are less than 3, includes: ${numbers[i]}`)
+//   }
+// }
+
+// ----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 

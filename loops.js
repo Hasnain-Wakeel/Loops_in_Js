@@ -152,3 +152,104 @@
 
 // --------------------------------------------------------------------------------------------------------
 
+// let students = ["asad","anas","ali","bilal","saad","saim","zain"]
+// let target = "saad"
+
+// for(i = 0 ; i < students.length ; i++){
+//    console.log(students[i])
+// }
+
+// -------------------------------------------------------------------------------------------------------------
+
+// let cleanCities = ["sialkot","lahore","faislabad","islamabad","rawalpindi","multan",];
+// let cityFound = false;
+// let city = prompt("Enter a City :");
+
+// for (i = 0; i < cleanCities.length; i++) {
+//   if (city.toLowerCase() === cleanCities[i]) {
+//     cityFound = true;
+//     alert(`Yes! "${city}" is one of the Cleanest Cities`);
+//     break;
+//   }
+// }
+// if (city.toLowerCase() !== cleanCities[i]) {
+//   cityFound = false;
+//   alert(`"${city}" is not included in the Cleanest Cities`);
+// }
+
+// -----------------------------------------------------------------------------------------
+
+// let cleanestCities = ["islamabad", "multan", "rawalpindi", "lahore", "faislabad", "sialkot", "murree", "abbotabad"];
+// var cityMatch = flase;
+// var cityToCheck = prompt("Enter a City :");
+
+// for (var i = 0; i < cleanestCities.length; i++){
+//   if (cityToCheck === cleanestCities[i]) {
+//       cityMatch = true;
+//       alert("Yes! It's one of the cleanest cities");
+//       console.log("Yes! It's one of the cleanest cities");
+//   }
+//   else {
+//       cityMatch = false;
+//       alert("It's not included in the Cleanest Cities");
+//       console.log("It's not included in the Cleanest Cities");
+//   }
+// }
+// if (cityToCheck !== cleanestCities[i]) {
+//   alert("It's not on the list");
+//   console.log("It's not on the list");
+//   cityMatch = false;
+// }
+
+// ------------------------------------------------------------------------
+
+// let cleanestCities = ["islamabad", "multan", "rawalpindi", "lahore", "faislabad", "sialkot", "murree", "abbotabad"];
+
+// var cityToCheck = prompt("Enter a City :");
+// var cityMatch = false;  // start with false
+
+// for (var i = 0; i < cleanestCities.length; i++){
+//   if (cityToCheck.toLowerCase() === cleanestCities[i]) { 
+//       cityMatch = true;
+//       break; // stop the loop once match found
+//   }
+// }
+
+// if (cityMatch === true) {
+//   alert("Yes! It's one of the cleanest cities");
+//   console.log("Yes! It's one of the cleanest cities");
+// } 
+// else {
+//   alert("It's not included in the Cleanest Cities");
+//   console.log("It's not included in the Cleanest Cities");
+// }
+
+// ----------------------------------------------------------------------------------------------
+
+// Predefined Array of Students :
+// let students = ["ahmed", "ali", "saad", "saim", "zain"];
+
+// // Taking Input From User :
+// let userName = prompt("Enter your name:").trim();
+
+// // Flag for Checking Attendance :
+// let flag = false;
+
+// //  Using For Loop for checking the name in the Array :
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i] === userName.toLowerCase()) {
+//         flag = true;  // name found
+//         break;        // no need to check further
+//     }
+// }
+
+// // Final check for Attendance :
+// if (flag === true) {
+//     console.log(`Your Attendance is Marked, "${userName}"!`);
+// } 
+// else {
+//     console.log(`${userName}! Please mark your attendance.`);
+// }
+
+// ----------------------------------------------------------------------------------------------
+

@@ -153,7 +153,6 @@
 // --------------------------------------------------------------------------------------------------------
 
 // let students = ["asad","anas","ali","bilal","saad","saim","zain"]
-// let target = "saad"
 
 // for(i = 0 ; i < students.length ; i++){
 //    console.log(students[i])
@@ -165,14 +164,14 @@
 // let cityFound = false;
 // let city = prompt("Enter a City :");
 
-// for (i = 0; i < cleanCities.length; i++) {
+// for(i = 0; i < cleanCities.length; i++) {
 //   if (city.toLowerCase() === cleanCities[i]) {
 //     cityFound = true;
 //     alert(`Yes! "${city}" is one of the Cleanest Cities`);
 //     break;
 //   }
 // }
-// if (city.toLowerCase() !== cleanCities[i]) {
+// if(city.toLowerCase() !== cleanCities[i]) {
 //   cityFound = false;
 //   alert(`"${city}" is not included in the Cleanest Cities`);
 // }
@@ -180,24 +179,21 @@
 // -----------------------------------------------------------------------------------------
 
 // let cleanestCities = ["islamabad", "multan", "rawalpindi", "lahore", "faislabad", "sialkot", "murree", "abbotabad"];
-// var cityMatch = flase;
-// var cityToCheck = prompt("Enter a City :");
+// let cityMatch = false;
+// let cityToCheck = prompt("Enter a City :");
 
 // for (var i = 0; i < cleanestCities.length; i++){
-//   if (cityToCheck === cleanestCities[i]) {
+
+//   if (cityToCheck.toLowerCase() === cleanestCities[i]) {
 //       cityMatch = true;
 //       alert("Yes! It's one of the cleanest cities");
-//       console.log("Yes! It's one of the cleanest cities");
-//   }
-//   else {
-//       cityMatch = false;
-//       alert("It's not included in the Cleanest Cities");
-//       console.log("It's not included in the Cleanest Cities");
-//   }
+//       console.log(`Yes!  It's one of the cleanest cities);
+//       break;
+//     }
 // }
-// if (cityToCheck !== cleanestCities[i]) {
-//   alert("It's not on the list");
-//   console.log("It's not on the list");
+// if (cityToCheck.toLowerCase() !== cleanestCities[i]) {
+//   alert("It is not included in the cleanest cities");
+//   console.log("It is not included in the cleanest cities");
 //   cityMatch = false;
 // }
 
@@ -215,6 +211,8 @@
 //   }
 // }
 
+// // Advantage of Flag:
+
 // if (cityMatch === true) {
 //   alert("Yes! It's one of the cleanest cities");
 //   console.log("Yes! It's one of the cleanest cities");
@@ -227,7 +225,7 @@
 // ----------------------------------------------------------------------------------------------
 
 // Predefined Array of Students :
-// let students = ["ahmed", "ali", "saad", "saim", "zain"];
+// let students = ["ahmed", "ali", "asad", "bilal", "ibrahim", "saad", "saim", "zain", "kashif"];
 
 // // Taking Input From User :
 // let userName = prompt("Enter your name:").trim();
@@ -287,7 +285,7 @@
 //         //  Ye console pehli baar condition true honay per {0 === 0} honay per aik baar {[Wakeel Anjum]} print karay ga ,
 //         //  iss liye hum final result dkhnay kay liye sirf last wala console he chalayein gay.
 
-//       console.log(`${firstName[i]} ${lastName[j]}`);     // Concatenates First Name with every Last Name
+//       // console.log(`${firstName[i]} ${lastName[j]}`);     // Concatenates First Name with every Last Name
 //     }
 //   }
 // }
@@ -303,6 +301,7 @@
 
 // for (let i = 0; i < firstName.length; i++) {
 //   for (let j = i; j <= i; j++) {             // { j = i ; j <= i } 
+
 //      // sirf matching index par chalega
 //     fullName.push(`${firstName[i]} ${lastName[j]}`);
 //   }
@@ -310,3 +309,8 @@
 // console.log(fullName);
 
 // -------------------------------------------------------------------------------------------------------
+
+// Creating Table using For Loops :
+
+
+

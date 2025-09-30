@@ -125,30 +125,30 @@
 
 // Final and Efficient Code :
 
-let numbers = [1, 2, 3, 4, 5];
-let sum = 0;
-let expression = "";
+// let numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
+// let expression = "";
 
-console.log("   Squares of numbers:");
+// console.log("   Squares of numbers:");
 
-for (let i = 0; i < numbers.length; i++) {
-    let square = numbers[i] * numbers[i];
-    console.log(`The Square of "${numbers[i]}" is "${square}"`);
+// for (let i = 0; i < numbers.length; i++) {
+//     let square = numbers[i] * numbers[i];
+//     console.log(`The Square of "${numbers[i]}" is "${square}"`);
 
-    // Making Expression, a String :
-    expression = expression + square;
+//     // Making Expression, a String :
+//     expression = expression + square;
 
-    // This adds "+" sign just before the last Number :
-    if (i < numbers.length - 1) {
-        expression = expression + " + ";     // 1 + 2 + 3 + 4 + 5
-    }
+//     // This adds "+" sign just before the last Number :
+//     if (i < numbers.length - 1) {
+//         expression = expression + " + ";     // 1 + 2 + 3 + 4 + 5
+//     }
 
-    // Updating Value of Sum :
-    sum = sum + square;
-}
+//     // Updating Value of Sum :
+//     sum = sum + square;
+// }
 
-console.log("   Sum of all Squares:");
-console.log(expression + " = " + sum);
+// console.log("   Sum of all Squares:");
+// console.log(expression + " = " + sum);
 
-
+// --------------------------------------------------------------------------------------------------------
 

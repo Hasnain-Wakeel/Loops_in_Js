@@ -300,7 +300,7 @@
 // let fullName = [];
 
 // for (let i = 0; i < firstName.length; i++) {
-//   for (let j = i; j <= i; j++) {             // { j = i ; j <= i } 
+//   for (let j = i; j <= i; j++) {             // { j = i ; j <= i }
 
 //      // sirf matching index par chalega
 //     fullName.push(`${firstName[i]} ${lastName[j]}`);
@@ -312,5 +312,71 @@
 
 // Creating Table using For Loops :
 
+// Taking a number as an input from user and printing the table of that number :
 
+// let userInput = prompt("Wo number enter karo kay jis ka aap Table dekhna chahtay ho :").trim();
+// userInput = Number(userInput);
+// // userInput = +userInput
+// // userInput = parseInt(userInput)
+
+// if (isNaN(userInput) || !Number.isInteger(userInput) || userInput <= 0) {
+//   // alert("Enter a valid number");
+//   console.log("Please enter a valid positive number!");
+// } 
+// else {
+//   for (i = userInput; i <= userInput; i++) {
+//     for (j = 1; j <= 10; j++) {
+//       console.log(`${i} x ${j} = ${i * j}`);
+//     }
+//   }
+// }
+
+// ------------------
+
+// Same code but it shows Alert only:
+
+// let userInput = prompt("Wo number enter karo kay jis ka aap Table dekhna chahtay ho :").trim();
+// userInput = Number(userInput);
+// // userInput = +userInput
+// // userInput = parseInt(userInput)
+
+// if (isNaN(userInput) || !Number.isInteger(userInput) || userInput <= 0) {
+//   alert("Please enter a valid positive number!");
+// }
+// else {
+//   for (i = userInput; i <= userInput; i++) {
+//     for (j = 1; j <= 10; j++) {
+//       console.log(`${i} x ${j} = ${i * j}`);
+//     }
+//   }
+// }
+
+// --------------------------------------------------------------
+
+// Without Using Nested Loop :
+
+// let number = prompt("Enter the number you want the multiplication table of:");
+
+// // Converting the string into number :
+// number = Number(number);
+// // number = parseInt(number);
+// // number = +number;
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${number} x ${i} = ${number * i}`);
+// }
+
+// ----------------------------------------------------------------------------------------------------
+
+// "isNaN()" Method checks whether a value is a number or not.
+
+// let userInput = prompt("Enter a number :");
+// if (isNaN(userInput)){
+//   console.log("Please enter a valid number");
+// }
+// else {
+//   console.log("You have entered a number :");
+// }
+
+// ---------------------------------------------------------------
 

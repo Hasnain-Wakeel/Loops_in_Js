@@ -105,9 +105,8 @@
 // ----------------------------------------------------------------------------------------------------------------
 
 // Only Printing A Single "OR" Specific Part Of The Result Of A Loop (Code) :
-                                //  "OR"
+//  "OR"
 // Using Conditional Statements Inside For Loop :
-
 
 // let numbers = [1, 2, 3, 4, 5];
 
@@ -122,9 +121,13 @@
 
 // ----------------------------------------------------------------------------------------------------------------------
 
+let numbers = [1, 2, 3, 4, 5];
+let sum = 0;
 
-
-
-
-
-
+for (i = 0; i < numbers.length; i++) {
+  multiplication = numbers[i] * numbers[i];
+  console.log(multiplication);
+  // sum = sum + multiplication
+  // console.log(sum)
+  // console.log(`The square of 1 is ${numbers[0]*numbers[0]} `)
+}

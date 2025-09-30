@@ -209,7 +209,7 @@
 // var cityMatch = false;  // start with false
 
 // for (var i = 0; i < cleanestCities.length; i++){
-//   if (cityToCheck.toLowerCase() === cleanestCities[i]) { 
+//   if (cityToCheck.toLowerCase() === cleanestCities[i]) {
 //       cityMatch = true;
 //       break; // stop the loop once match found
 //   }
@@ -218,7 +218,7 @@
 // if (cityMatch === true) {
 //   alert("Yes! It's one of the cleanest cities");
 //   console.log("Yes! It's one of the cleanest cities");
-// } 
+// }
 // else {
 //   alert("It's not included in the Cleanest Cities");
 //   console.log("It's not included in the Cleanest Cities");
@@ -246,10 +246,67 @@
 // // Final check for Attendance :
 // if (flag === true) {
 //     console.log(`Your Attendance is Marked, "${userName}"!`);
-// } 
+// }
 // else {
 //     console.log(`${userName}! Please mark your attendance.`);
 // }
 
-// ----------------------------------------------------------------------------------------------
+// ---------------------------------- For Loop ----------------------------------------------
 
+// Simple Approach (not only works for equal length arrays) :
+
+// let firstName = ["Wakeel", "Hasan", "Ali" , "Saad", "Ahsan"];
+// let lastName = ["Anjum", "Khan", "Ahmed", "Sheikh"];
+// let fullName = [];
+
+// for (let i = 0; i < firstName.length; i++) {
+
+//   if (lastName[i] !== undefined) {     // This checks that is there a value in Last Name ot Not :
+//     fullName.push(firstName[i] + " " + lastName[i]);
+//   }
+//   else {
+//     fullName.push(firstName[i]);   // Pushes only the First Name if there is no last name in the array :
+//   }
+// }
+
+// console.log(fullName);
+
+// ----------------------------------- Nested For Loop --------------------------------------
+
+// let firstName = ["Wakeel", "Hasan"];
+// let lastName = ["Anjum", "Khan"];
+// let fullName = [];
+
+// for (let i = 0; i < firstName.length; i++) {
+//   for (let j = 0; j < lastName.length; j++) {
+//     if (i === j) {
+//       fullName.push(`${firstName[i]} ${lastName[j]}`);
+
+//            // console.log(fullName)             // This prints [Wakeel Anjum] separately
+
+//         //  Ye console pehli baar condition true honay per {0 === 0} honay per aik baar {[Wakeel Anjum]} print karay ga ,
+//         //  iss liye hum final result dkhnay kay liye sirf last wala console he chalayein gay.
+
+//       console.log(`${firstName[i]} ${lastName[j]}`);     // Concatenates First Name with every Last Name
+//     }
+//   }
+// }
+// console.log(fullName);
+
+// --------------------------------------------------------------------------------------------------
+
+// Again concatenating Full Names by using For Loop (using a trick) :
+
+// let firstName = ["Wakeel", "Hasan", "Ali", "Saad"];
+// let lastName = ["Anjum", "Khan", "Khan", "Sheikh"];
+// let fullName = [];
+
+// for (let i = 0; i < firstName.length; i++) {
+//   for (let j = i; j <= i; j++) {             // { j = i ; j <= i } 
+//      // sirf matching index par chalega
+//     fullName.push(`${firstName[i]} ${lastName[j]}`);
+//   }
+// }
+// console.log(fullName);
+
+// -------------------------------------------------------------------------------------------------------

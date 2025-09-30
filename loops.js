@@ -121,13 +121,34 @@
 
 // ----------------------------------------------------------------------------------------------------------------------
 
+// Adding All Squares Of Numbers In An Array :
+
+// Final and Efficient Code :
+
 let numbers = [1, 2, 3, 4, 5];
 let sum = 0;
+let expression = "";
 
-for (i = 0; i < numbers.length; i++) {
-  multiplication = numbers[i] * numbers[i];
-  console.log(multiplication);
-  // sum = sum + multiplication
-  // console.log(sum)
-  // console.log(`The square of 1 is ${numbers[0]*numbers[0]} `)
+console.log("   Squares of numbers:");
+
+for (let i = 0; i < numbers.length; i++) {
+    let square = numbers[i] * numbers[i];
+    console.log(`The Square of "${numbers[i]}" is "${square}"`);
+
+    // Making Expression, a String :
+    expression = expression + square;
+
+    // This adds "+" sign just before the last Number :
+    if (i < numbers.length - 1) {
+        expression = expression + " + ";     // 1 + 2 + 3 + 4 + 5
+    }
+
+    // Updating Value of Sum :
+    sum = sum + square;
 }
+
+console.log("   Sum of all Squares:");
+console.log(expression + " = " + sum);
+
+
+

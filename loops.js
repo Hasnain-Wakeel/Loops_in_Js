@@ -430,4 +430,73 @@
 // }
 // console.log(typeof(nestedArray))    // Object
 
+// ---------------------------------------------------------------------
 
+// Flags and Converting Data into LowerCase :
+
+// let isPresent = false;
+// let userName = prompt("Enter Your Name :").toLowerCase()
+// // let userName = prompt("Enter Your Name :").toUpperCase()
+
+// let students = ["asad","anas","ali","bilal","saad","saim","zain"]
+
+// for(i = 0 ; i <= students.length ; i++){
+//   if(userName === students[i]){
+//     isPresent = true
+//     console.log("You are present!")
+//   }
+// }
+// if(isPresent === false){
+//   console.log("You are not present!")
+// }
+
+// ----------------------------------------
+
+// Converting Data (first letter) into UpperCase "OR" as much as we Want :
+
+// let isPresent = false;
+
+// let userName = prompt("Enter Your Name :");
+// userName = userName.slice(0, 1).toUpperCase() + userName.slice(1).toLowerCase();
+
+// let students = ["Asad", "Anas", "Ali", "Bilal", "Saad", "Saim", "Zain"];
+
+// for (i = 0; i <= students.length; i++) {
+//   if (students[i] === userName) {
+//     isPresent = true;
+//     console.log(userName , "you are present!")
+//     // console.log(userName);
+//   }
+// }
+// if (isPresent === false) {
+//   console.log(userName , "is Not Present!")
+//   // console.log(userName);
+// }
+
+// ----------------------------------------------------------------------------------------------------------------
+
+// Printing A Pattern :
+
+// This format does not resets the value after every iteration :
+
+// let stars = ""
+// for(i = 0 ; i <= 3 ; i++){
+//   for(j = 0 ; j <= i ; j++){
+//     stars = stars + "* "
+//     console.log(stars)
+//   }
+// }
+
+// -----------------------------
+
+// This format resets the value after every iteration :
+
+// for(i = 0 ; i <= 3 ; i++){
+//   let stars = ""
+//   for(j = 0 ; j <= i ; j++){
+//     stars = stars + "* "
+//   }
+//   console.log(stars)
+// }
+
+// ----------------------------------------------------------------------------------------------------------------

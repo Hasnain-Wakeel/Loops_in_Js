@@ -322,7 +322,7 @@
 // if (isNaN(userInput) || !Number.isInteger(userInput) || userInput <= 0) {
 //   // alert("Enter a valid number");
 //   console.log("Please enter a valid positive number!");
-// } 
+// }
 // else {
 //   for (i = userInput; i <= userInput; i++) {
 //     for (j = 1; j <= 10; j++) {
@@ -379,4 +379,55 @@
 // }
 
 // ---------------------------------------------------------------
+
+// Printing Inverse Table Using For Loop :
+
+// let userInput = prompt("Wo number enter karo kay jis ka aap Table dekhna chahtay ho :").trim();
+// userInput = Number(userInput);
+
+// console.log(`Inverse table of "${userInput}" is :`);
+
+// for( i = userInput ; i >= userInput ; i--){
+//     for (j = 10; j >= 1; j--) {
+//         console.log(`${i} x ${j} = ${i * j}`);
+//     }
+// }
+
+// ---------------------------------------------------------------------------------------------------------
+
+// ---------------- Two Dimensional Array "OR" Nested Array --------------
+
+// let nestedArray = [
+//   [1, 2], // 0 index
+//   [3, 4], // 1 index
+//   [5, 6], // 2 index
+// ];
+
+// // console.log(nestedArray);
+// // console.log(nestedArray[0]);      // [1, 2]
+// // console.log(nestedArray[0][0]);   // 1
+
+// for (i = 0; i < nestedArray.length; i++) {
+//   for (j = 0; j < nestedArray[i].length; j++) {
+//     console.log(nestedArray[i][j]);
+//   }
+// }
+
+// // ------------------
+
+// // Printing The Elements Of Nested Array Inversely :
+
+// let nestedArray = [
+//   ["1", "2", "3"],         // 0 index
+//   ["4", "5", "6"],         // 1 index
+//   ["7", "8", "9"],         // 2 index
+// ];
+
+// for (let i = nestedArray.length - 1; i >= 0; i--) {
+//   for (let j = nestedArray[i].length - 1; j >= 0; j--) {
+//     console.log(nestedArray[i][j]);
+//   }
+// }
+// console.log(typeof(nestedArray))    // Object
+
 

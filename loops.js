@@ -500,3 +500,45 @@
 // }
 
 // ----------------------------------------------------------------------------------------------------------------
+
+// This Program Takes 2 Inputs From The User :
+// 1. Number for Table
+// 2. Type Of Table (Normal, Inverse, Both)
+
+// var num = parseInt(prompt("Enter a number for table:"));
+// var type = prompt(
+//   "Type 'normal' for 1 to 10 or 'inverse' for 10 to 1 or 'both' for both :"
+// ).toLowerCase();
+// // console.log(`Table of ${num} (${type}):`);
+// if (
+//   num === null ||
+//   num === undefined ||
+//   num === "" ||
+//   isNaN(num) ||
+//   !Number.isInteger(num) ||
+//   num <= 0
+// ) {
+//   console.log("Invalid input! Please enter a valid number!.");
+// }
+// if (type.toLowerCase() == "normal") {
+//     console.log(`Table of ${num} (${type}):`);
+//   for (var i = 1; i <= 10; i++) {
+//     console.log(num + " * " + i + " = " + num * i);
+//   }
+// } else if (type.toLowerCase() == "inverse") {
+//     console.log(`Table of ${num} (${type}):`);
+//   for (var i = 10; i >= 1; i--) {
+//     console.log(num + " * " + i + " = " + num * i);
+//   }
+// } else if (type.toLowerCase() == "both") {
+//   console.log(`Table of ${num} (In Normal Way):`);
+//   for (var i = 1; i <= 10; i++) {
+//     console.log(num + " * " + i + " = " + num * i);
+//   }
+//   console.log(`Table of ${num} (In Inverse Way):`);
+//   for (var i = 10; i >= 1; i--) {
+//     console.log(num + " * " + i + " = " + num * i);
+//   }
+// } else {
+//   console.log("Invalid type! Type 'normal' or 'inverse'.");
+// }

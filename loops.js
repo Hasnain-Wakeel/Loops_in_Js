@@ -4,7 +4,7 @@
 // It has three parts inside the parentheses .
 
 // Necessary Things In Loop are :
-//       (i)            (c)            (u)
+//        (i)            (c)            (u)
 //   initialization ; condition ;     updation
 
 // General Syntax Of For Loop :
@@ -13,34 +13,81 @@
 //     // Code To Run
 // }
 
-// ----------------------------------------------------------------------------------------------------
+// --------------------- Printing Numbers from 1 to 100 --------------------------
 
-// for(let a = 1 ; a <= 7 ; a++){
-//     console.log("Value of a is " + a)         // Here + joins the string "Value of a is " with the variable a.
-//                                                         // The result becomes a single string.
-//     console.log("Value of a is " , a)        // Comma (separate operator)
-//     // console.log(typeof(a))
+// for ( i = 1 ; i <= 100 ; i++){
+//     console.log(i)
 // }
 
-// ---------------------------------------------------------------------------------------------------
+// --------------------- Printing Even Numbers from 0 to 100 ----------------------
+
+// console.log("Even Numbers from 0 to 100 :")
+
+// for (i = 0 ; i <= 100 ; i++){
+//     if(i%2 === 0){
+//         console.log(i)
+//     }
+// }
+
+// --------------------- Printing Odd Numbers from 0 to 100 ----------------------
+
+// console.log("Odd Numbers from 0 to 100 :")
+
+// for (i = 0 ; i <= 100 ; i++){
+//     if(i%2 === 1){
+//         console.log(i)
+//     }
+// }
+
+// ------------------- Printing N Numbers (N is the userInput) ------------------
+
+// let userInput = prompt("Enter any Number :");
+
+// if (userInput >= 0 && userInput !== isNaN(userInput)) {
+//   console.log("Printing counting till your Inputted Number :");
+
+//   for (i = 1; i <= userInput; i++) {
+//     console.log(i);
+//   }
+// }
+// else{
+//     console.log("Enter valid Input!")
+// }
+
+// --------------------------
+
+// ---------------------------------------------------------------------
+
+// for(let a = 1 ; a <= 7 ; a++){
+
+//   console.log("Value of a is " + a);    // Here + joins the string "Value of a is" with the variable "a".
+//   console.log(typeof(a))                // The result becomes a single string, but "a" is still a number.
+
+//   console.log("Value of a is ", a);     // Comma (separate operator)
+//   console.log(typeof(a))
+
+// }
+
+// ----------------------------------------------------------------------
 
 // let students = ["ali", "anas", "saad", "zain"];
+
 // for (i = 0; i < students.length; i++) {
-//     console.log(i)
+//   console.log(i)
 //   console.log(students[i]);
 // }
 
-// // console.log(students[i]);             // This returns undefined bcz the value of i is 4 and
-//                                                    // the array has only 4 elements.
-//   console.log(`Value of i outside the loop is ${i}`)
+// console.log(students[i]);   // This returns undefined bcz Now the value of i is 4 but the array has only 4 elements.
+
+// console.log(`Value of i outside the loop is ${i}`)  // Now, the value of i is 4 but at outside the loop.
 
 // --------------------------------------------------------------------------------------------------
 
-// let numbers = [1, 2, 3, 4, 5]
+// let numbers = [1, 2, 3, 4, 5];
 
 // for (i = 0 ; i < numbers.length ; i++){
-//      numbers = numbers + 1             // numbers aik array hai , aur array mein aisay addition nahi kiya jata ....
-//      console.log(numbers)
+//     numbers = numbers + 1         // numbers aik array hai , aur array mein aisay addition nahi kiya jata ....
+//     console.log(numbers)
 // }
 
 // This code is not Factually correct , bcz if we want to access elements of an array,
@@ -48,15 +95,21 @@
 
 // For Example :
 
+// ------------ Example Program , adding 1 to each element of an array : ------------
+
 // let numbers = [1, 2, 3, 4, 5];
 
-// for (i = 0; i < numbers.length; i++) {       // Yahan hum "<=" ki jagah sirf "<" use karein gay bcz hamaray pass array mein
-// total indexes 4 hain ...
+// for (i = 0 ; i < numbers.length ; i++) {       // Yahan hum "<=" ki jagah sirf "<" use karein gay bcz
+// // hamaray pass array mein total indexes 4 hain ...
+
 //   numbers[i] = numbers[i] + 1;
-//   console.log(numbers[i]);
+//   console.log(numbers[i]);       // for result of an element after adding 1 to each element of an array.
+//   console.log(numbers);          // for result of whole array after adding 1 to each element of an array.
 // }
 
 // --------------------------------------  // Back Flow of Code : ---------------------------------------
+
+// --------------------- if we write "<=" in the condition : -----------------------
 
 //              Jab i = 5 :
 
@@ -254,16 +307,35 @@
 // Simple Approach (not only works for equal length arrays) :
 
 // let firstName = ["Wakeel", "Hasan", "Ali" , "Saad", "Ahsan"];
-// let lastName = ["Anjum", "Khan", "Ahmed", "Sheikh"];
+// let lastName = ["Anjum", "Khan", "Ahmed"];
 // let fullName = [];
 
 // for (let i = 0; i < firstName.length; i++) {
 
-//   if (lastName[i] !== undefined) {     // This checks that is there a value in Last Name ot Not :
-//     fullName.push(firstName[i] + " " + lastName[i]);
+//   if (lastName[i] === undefined) {     // Pushes only the First Name if there is no last name in the array :
+//     fullName.push(firstName[i]);
 //   }
 //   else {
-//     fullName.push(firstName[i]);   // Pushes only the First Name if there is no last name in the array :
+//     fullName.push(firstName[i] + " " + lastName[i]);   // Concatenates First Name with every Last Name
+//   }
+// }
+
+// console.log(fullName);
+
+// ------------------------
+// --------- "OR" ---------
+// ------------------------
+
+// let firstName = ["Wakeel", "Hasan", "Ali", "Saad", "Ahsan"];
+// let lastName = ["Anjum", "Khan", "Ahmed"];
+// let fullName = [];
+
+// for (let i = 0; i < firstName.length; i++) {
+
+//   if (lastName[i] !== undefined) {      // Concatenates First Name with every Last Name
+//     fullName.push(firstName[i] + " " + lastName[i]);  }
+//   else {
+//     fullName.push(firstName[i]);        // Pushes only the First Name if there is no last name in the array :
 //   }
 // }
 
@@ -271,8 +343,8 @@
 
 // ----------------------------------- Nested For Loop --------------------------------------
 
-// let firstName = ["Wakeel", "Hasan"];
-// let lastName = ["Anjum", "Khan"];
+// let firstName = ["Wakeel", "Hasan", "Ali", "Saad", "Ahsan"];
+// let lastName = ["Anjum", "Khan" , "Ahmed", "Raza"];
 // let fullName = [];
 
 // for (let i = 0; i < firstName.length; i++) {
@@ -280,12 +352,14 @@
 //     if (i === j) {
 //       fullName.push(`${firstName[i]} ${lastName[j]}`);
 
-//            // console.log(fullName)             // This prints [Wakeel Anjum] separately
+//         //   console.log(fullName);
+//       // This prints [Wakeel Anjum] and [Hasan Khan] separately
 
-//         //  Ye console pehli baar condition true honay per {0 === 0} honay per aik baar {[Wakeel Anjum]} print karay ga ,
-//         //  iss liye hum final result dkhnay kay liye sirf last wala console he chalayein gay.
+//       //  Ye console pehli baar condition true honay per {0 === 0} honay per aik baar {[Wakeel Anjum]} print karay ga,
+//       //  iss liye hum final result dkhnay kay liye sirf last wala console he chalayein gay.
 
-//       // console.log(`${firstName[i]} ${lastName[j]}`);     // Concatenates First Name with every Last Name
+//         // console.log(`${firstName[i]} ${lastName[j]}`);
+//       // This prints [Wakeel Anjum] and [Hasan Khan] separately in new line.
 //     }
 //   }
 // }
@@ -293,17 +367,22 @@
 
 // --------------------------------------------------------------------------------------------------
 
-// Again concatenating Full Names by using For Loop (using a trick) :
+// // Again concatenating Full Names by using For Loop (Using A Trick) :
 
-// let firstName = ["Wakeel", "Hasan", "Ali", "Saad"];
-// let lastName = ["Anjum", "Khan", "Khan", "Sheikh"];
+// let firstName = ["Wakeel", "Hasan", "Ali", "Saad", "Ahsan"];
+// let lastName = ["Anjum", "Khan", "Ahmed", "Sheikh"];
 // let fullName = [];
 
 // for (let i = 0; i < firstName.length; i++) {
 //   for (let j = i; j <= i; j++) {             // { j = i ; j <= i }
 
-//      // sirf matching index par chalega
-//     fullName.push(`${firstName[i]} ${lastName[j]}`);
+//     if (lastName[i] !== undefined) {
+//       // sirf matching index par chalega
+//       fullName.push(`${firstName[i]} ${lastName[j]}`);
+//     }
+//     else {
+//       fullName.push(`${firstName[i]}`);
+//     }
 //   }
 // }
 // console.log(fullName);
@@ -351,19 +430,59 @@
 //   }
 // }
 
-// --------------------------------------------------------------
+// ----------------- Printing Table Without Using Nested Loop : -----------------
 
-// Without Using Nested Loop :
+// let number = Number(prompt("Enter the number you want the multiplication table of:"));
 
-// let number = prompt("Enter the number you want the multiplication table of:");
-
-// // Converting the string into number :
-// number = Number(number);
-// // number = parseInt(number);
+// // Methods for Converting the string into number :
+// // number = Number(number);
 // // number = +number;
+// // number = parseInt(number);
 
-// for (let i = 1; i <= 10; i++) {
+// if (isNaN(number) || !Number.isInteger(number) || number <= 0) {
+//     console.log("Please enter a valid positive number!");
+// }
+// else{
+//     console.log(`Table of ${number}:`);
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(`${number} x ${i} = ${number * i}`);
+//     }
+// }
+
+// ----------------------------------------------------------------------------------------------------
+
+// ---------------------  Placing this Whole Program in a Function : ----------------------
+
+// function showTable() {
+
+//   let number = Number(prompt("Enter the number you want the multiplication table of:"));
+
+//   if (isNaN(number) || !Number.isInteger(number) || number <= 0) {
+//     console.log("Please enter a valid positive number!");
+//     return; // (return is  only allowed inside a function)
+//     // Now this will stop the execution of the function and the function will stop executing further code.
+//   }
+
+//   console.log(`Table of ${number}:`);
+
+//   for (let i = 1; i <= 10; i++) {
 //     console.log(`${number} x ${i} = ${number * i}`);
+//   }
+
+// }
+
+// showTable();
+
+// ----------------------------------------------------------------------------------------------------
+
+// "Number.isInteger()" Method checks whether a value is an integer or not.
+
+// let userInput = prompt("Enter a number :");
+// if (Number.isInteger(userInput)){
+//   console.log("You have entered a number :");
+// }
+// else {
+//   console.log("Please enter a valid number");
 // }
 
 // ----------------------------------------------------------------------------------------------------
@@ -378,18 +497,22 @@
 //   console.log("You have entered a number :");
 // }
 
-// ---------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
 
-// Printing Inverse Table Using For Loop :
+// -----------------------------  Printing Inverse Table Using For Loop : --------------------------
 
-// let userInput = prompt("Wo number enter karo kay jis ka aap Table dekhna chahtay ho :").trim();
+// let userInput = prompt("Wo number enter karo kay jis ka aap Reverse Table dekhna chahtay ho :").trim();
 // userInput = Number(userInput);
 
-// console.log(`Inverse table of "${userInput}" is :`);
-
-// for( i = userInput ; i >= userInput ; i--){
-//     for (j = 10; j >= 1; j--) {
-//         console.log(`${i} x ${j} = ${i * j}`);
+// if (isNaN(userInput) || !Number.isInteger(userInput) || userInput <= 0) {
+//     console.log("Please enter a valid positive number!");
+// }
+// else{
+//     console.log(`Inverse table of "${userInput}" is :`);
+//     for( i = userInput ; i >= userInput ; i--){
+//         for (j = 10; j >= 1; j--) {
+//             console.log(`${i} x ${j} = ${i * j}`);
+//         }
 //     }
 // }
 
@@ -477,13 +600,13 @@
 
 // Printing A Pattern :
 
-// This format does not resets the value after every iteration :
+// // This format does not resets the value after every iteration :
 
-// let stars = ""
-// for(i = 0 ; i <= 3 ; i++){
-//   for(j = 0 ; j <= i ; j++){
-//     stars = stars + "* "
-//     console.log(stars)
+// let stars = "";
+// for (i = 1; i <= 2; i++) {
+//   for (j = 0; j <= i; j++) {
+//     stars = stars + "* ";
+//     console.log(stars);
 //   }
 // }
 
@@ -505,40 +628,115 @@
 // 1. Number for Table
 // 2. Type Of Table (Normal, Inverse, Both)
 
-// var num = parseInt(prompt("Enter a number for table:"));
-// var type = prompt(
-//   "Type 'normal' for 1 to 10 or 'inverse' for 10 to 1 or 'both' for both :"
-// ).toLowerCase();
-// // console.log(`Table of ${num} (${type}):`);
-// if (
-//   num === null ||
-//   num === undefined ||
-//   num === "" ||
-//   isNaN(num) ||
-//   !Number.isInteger(num) ||
-//   num <= 0
-// ) {
-//   console.log("Invalid input! Please enter a valid number!.");
+var num = parseInt(prompt("Enter a number for table:"));
+var type = prompt("Type 'normal' for 1 to 10 or 'inverse' for 10 to 1 or 'both' for both :").toLowerCase();
+// console.log(`Table of ${num} (${type}):`);
+if (
+  num === null ||
+  num === undefined ||
+  num === "" ||
+  isNaN(num) ||
+  !Number.isInteger(num) ||
+  num <= 0
+) {
+  console.log("Invalid input! Please enter a valid number!.");
+}
+if (type.toLowerCase() == "normal") {
+    console.log(`Table of ${num} (${type}):`);
+  for (var i = 1; i <= 10; i++) {
+    console.log(num + " * " + i + " = " + num * i);
+  }
+} 
+else if (type.toLowerCase() == "inverse") {
+    console.log(`Table of ${num} (${type}):`);
+  for (var i = 10; i >= 1; i--) {
+    console.log(num + " * " + i + " = " + num * i);
+  }
+} 
+else if (type.toLowerCase() == "both") {
+  console.log(`Table of ${num} (In Normal Way):`);
+  for (var i = 1; i <= 10; i++) {
+    console.log(num + " * " + i + " = " + num * i);
+  }
+  console.log(`Table of ${num} (In Inverse Way):`);
+  for (var i = 10; i >= 1; i--) {
+    console.log(num + " * " + i + " = " + num * i);
+  }
+} 
+else {
+  console.log("Invalid type! Type 'normal' or 'inverse'.");
+}
+
+// -------------------------------------------------------------------------------------------------------------
+
+//              Strings:
+// Measuring Length and Extracting Parts :
+
+// let userCity = prompt("Enter Your City Name :").toLowerCase()
+// let cityLength = userCity.length
+// console.log("Length of your city is : " + cityLength)
+
+// ------- Slicing First Character ------
+
+// let firstChar = userCity.slice(0,1)
+// console.log(firstChar)
+
+// ------ Slicing Some Characters -------
+
+// let someChar = userCity.slice(2,6)
+// console.log(someChar)
+
+// -------------------------------------------------------------------------------
+
+// let firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+// let lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+// let fullName;
+
+// for (i = 0 ; i < firstNames.length ; i++){
+//     for (j = 0 ; j < lastNames.length ; j++){
+//         fullName = firstNames[i] + lastNames[i]     // Error (undefind) at j = 4 , lastNames[4] does not exist.
+//         console.log(fullName);
+//         break;
+//     }
 // }
-// if (type.toLowerCase() == "normal") {
-//     console.log(`Table of ${num} (${type}):`);
-//   for (var i = 1; i <= 10; i++) {
-//     console.log(num + " * " + i + " = " + num * i);
-//   }
-// } else if (type.toLowerCase() == "inverse") {
-//     console.log(`Table of ${num} (${type}):`);
-//   for (var i = 10; i >= 1; i--) {
-//     console.log(num + " * " + i + " = " + num * i);
-//   }
-// } else if (type.toLowerCase() == "both") {
-//   console.log(`Table of ${num} (In Normal Way):`);
-//   for (var i = 1; i <= 10; i++) {
-//     console.log(num + " * " + i + " = " + num * i);
-//   }
-//   console.log(`Table of ${num} (In Inverse Way):`);
-//   for (var i = 10; i >= 1; i--) {
-//     console.log(num + " * " + i + " = " + num * i);
-//   }
-// } else {
-//   console.log("Invalid type! Type 'normal' or 'inverse'.");
+
+// ------------ Fixing Undefind ------------
+
+// let firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+// let lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+// let fullName;
+
+// for (let i = 0; i < firstNames.length; i++) {
+//   // Agar lastNames[i] exist nahi karta toh hum "" use karein gay :
+//   let last = lastNames[i] || "";
+//   fullName = firstNames[i] + last;
+//   console.log(fullName);
+// }
+
+// ----------------------- Self Assesment Questions -----------------------
+
+// ------------ Table Of 5 : ----------
+
+// for (i = 5 ; i <= 5 ; i++){
+//     for(j = 1 ; j <= 10 ; j++){
+//         console.log(i + " x " + j + " = " + i * j)
+//     }
+// }
+
+// ------- Printing Array In Reverse : ------
+
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (i = array.length-1 ; i >= 0 ; i--){
+//     console.log(array[i]);
+// }
+
+// -------------------------- NESTED ARRAY and NESTED LOOP : --------------------------
+
+// let nestedArray = [ [1, 2, 3] , ["a", "b", "c"] ];
+
+// for (i = 0 ; i < nestedArray.length ; i++){
+//     for (j = 0; j < nestedArray[i].length; j++) {
+//         console.log(nestedArray[i][j]);
+//     }
 // }
